@@ -24,18 +24,16 @@ function akanName() {
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    var index;
+    var i;
     if (d == 0) {
-      index = 6;
+      i = 6;
     } else {
-      index = d - 1;
+      i = d - 1;
     }
     if (myGender == "M" && month && day) {
-        document.getElementById('akan').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index];
-        return false;
+        document.getElementById('akan').textContent = "You were born on a " + daysOfWeek[i] + " , your Akan name is " + maleAkanNames[i];
     } else {
-        document.getElementById('akan').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index];
-        return false;
+        document.getElementById('akan').textContent = "You were born on a " + daysOfWeek[i] + " , your Akan name is " + femaleAkanNames[i];
     }
 }
   
