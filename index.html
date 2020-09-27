@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
-        <title>Akan name</title>
+        <title>Akan Name Giver</title>
     </head>
     <body>
-        <h1>Hello, welcome</h1>
-        <script href="js/index.js"></script>
-        <div class="form">
-            <form name="myform" action="" method="get">
-                <label for="">Enter your birth date:</label>
-                <input type="date" name="birth date" required>
-                <button class="button" type="submit">Submit</button>
+        <div class="container">
+            <h1>The Akan name giver</h1>
+            <form name="myform" action="" method="get" onsubmit="return akanName()">
+                <p><label for="">Birth Day:</label>
+                    <input id="day" type="number" name="day" value="" required></p>
+                <p><label for="">Birth Month:</label>
+                    <input id="month" type="number" name="month" value="" required></p>
+                <p><label for="">Birth Year:</label>
+                    <input id="year" type="number" name="year" value="" required></p>
+                <p><label for="gender">
+                    <input type="radio" id="male" name="gender" value="M">Male
+                    <input type="radio" id="female" name="gender" value="F">Female
+                </label></p>
+                <input id="akan-name" type="submit" name="" value="Akan name">
             </form>
+            <p id="akan"></p>
         </div>
-        <div class="gender">
-            <label for="male">
-                <input type="radio" id="male" name="gender" value="M">Male
-            </label>
-            <label for="female">
-                <input type="radio" id="female" name="gender" value="F">Female
-            </label>
-        </div>
+        <script href="js/index.js"></script>
     </body>
 </html>
