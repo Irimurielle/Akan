@@ -7,21 +7,26 @@
     <body>
         <div class="container">
             <h1>The Akan name giver</h1>
+            <p>Welcome, this web application uses birth date to calculate the day of the week one was born and then basing on the gender,finds the Akan name  of the person. <br>
+                Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. <a href="https://fairafric.com/let-the-name-speak-the-deep-meaning-of-ghanaian-first-names">Learn more</a></p>
+            <img src="/home/wecode/akan/images/download.png">
+        </div>
+            <p>Fill out the form to find out your Akan name:</p>
             <form name="myform" action="" method="get" onsubmit="return akanName()">
                 <p><label for="">Birth Day:</label>
-                    <input id="day" type="number" name="day" value="" required></p>
-                <p><label for="">Birth Month:</label>
-                    <input id="month" type="number" name="month" value="" required></p>
-                <p><label for="">Birth Year:</label>
+                    <input id="day" type="number" name="day" value="" required>
+                <label for="">Birth Month:</label>
+                    <input id="month" type="number" name="month" value="" required>
+                <label for="">Birth Year:</label>
                     <input id="year" type="number" name="year" value="" required></p>
-                <p><label for="gender">
+                <p>Choose your gender:</p>
+                <label for="gender">
                     <input type="radio" id="male" name="gender" value="M">Male
                     <input type="radio" id="female" name="gender" value="F">Female
-                </label></p>
-                <input id="akan-name" type="submit" name="" value="Akan name">
+                </label>
+                <p><input id="akan-name" type="submit" name="" value="Akan name"></p>
             </form>
             <p id="akan"></p>
-        </div>
         <script href="js/index.js"></script>
     </body>
 </html>
