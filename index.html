@@ -8,16 +8,20 @@
     <body>
         <h1>Hello, welcome</h1>
         <script href="js/index.js"></script>
-        <form name="myform" action="" method="get">
-            <label for="">Enter your birth date</label><br>
-            <input type="date" name="birth date"><br>
-            <button type="submit">Submit</button>
-        </form>
-        <label for="male">
-            <input type="radio" name="gender" value="M">Male
-        </label>
-        <label for="female">
-            <input type="radio" name="gender" value="F">Female
-        </label>
+        <div class="form">
+            <form name="myform" action="" method="get">
+                <label for="">Enter your birth date:</label>
+                <input type="date" name="birth date" required>
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="gender">
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="M">Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="F">Female
+            </label>
+        </div>
     </body>
 </html>
