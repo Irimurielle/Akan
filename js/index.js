@@ -31,9 +31,9 @@ function akanName() {
       i = d - 1;
     }
     if (myGender == "M" && month && day) {
-        document.getElementById('akan').textContent = "You were born on a " + daysOfWeek[i] + " , your Akan name is " + maleAkanNames[i];
+        document.getElementById('akan').innerHTML = "You were born on a " + daysOfWeek[i] + " , your Akan name is " + maleAkanNames[i];
     } else {
-        document.getElementById('akan').textContent = "You were born on a " + daysOfWeek[i] + " , your Akan name is " + femaleAkanNames[i];
+        document.getElementById('akan').innerHTML = "You were born on a " + daysOfWeek[i] + " , your Akan name is " + femaleAkanNames[i];
     }
 }
   
